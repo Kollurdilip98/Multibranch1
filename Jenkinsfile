@@ -10,7 +10,16 @@ pipeline
                 git 'https://github.com/krishnain/mavennew.git'
             }
         }
+   stage('build-Loans')
+        {
+            steps
+            {
+                sh 'mvn package'
+            }
+        }
     }
+    
+    
     
     
     
